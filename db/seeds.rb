@@ -6,9 +6,9 @@ miguel = User.create(username: "miglovin", name: "Miguel", password: "world")
 
 puts "🌱 Seeding Cloths..."
 
-cloth1 = Cloth.create(category:"Sweaters", name: "", price: "", image: "", brand: "")
-cloth2 = Cloth.create(category:"Pants", name: "", price: "", image: "", brand: "")
-cloth3 = Cloth.create(category:"Sneakers", name: "", price: "", image: "", brand: "")
+cloth1 = Cloth.create(category:"Sweaters", name: "", price: , image: "", brand: "")
+cloth2 = Cloth.create(category:"Pants", name: "", price: , image: "", brand: "")
+cloth3 = Cloth.create(category:"Sneakers", name: "", price: , image: "", brand: "")
 
 puts "🌱 Seeding Items..."
 
