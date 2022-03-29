@@ -16,7 +16,9 @@ ActiveRecord::Schema.define(version: 2022_03_28_215237) do
     t.string "category"
     t.string "name"
     t.integer "price"
-    t.string "image"
+    t.string "image1"
+    t.string "image2"
+    t.string "color"
     t.string "brand"
   end
 

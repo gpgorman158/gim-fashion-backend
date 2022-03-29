@@ -4,7 +4,9 @@ class CreateCloths < ActiveRecord::Migration[6.1]
       t.string :category
       t.string :name
       t.integer :price
-      t.string :image
+      t.string :image1
+      t.string :image2
+      t.string :color
       t.string :brand
     end
   end
