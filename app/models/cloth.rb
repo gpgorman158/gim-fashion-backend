@@ -5,4 +5,5 @@ class Cloth < ActiveRecord::Base
     def self.prices_low_high
         self.all.sort(:price)
     end
+
 end 
