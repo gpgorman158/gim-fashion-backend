@@ -6,5 +6,11 @@ class UsersController < Sinatra::Base
         users = User.all
         users.to_json
     end
+    get "/users/:id" do
+        logged_in_user = User.find(params[:id])
+        items = logged_in_user.get_shopping_items
+        items.to_json
+    end
+    
   
   end
