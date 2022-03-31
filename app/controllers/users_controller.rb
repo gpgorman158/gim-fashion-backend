@@ -11,6 +11,15 @@ class UsersController < Sinatra::Base
         items = logged_in_user.get_shopping_items
         items.to_json
     end
+    post '/users/:id' do
+    
+        user_new_item = Item.create(
+            user_id: params[:user_id],
+            cloth_id: params[:cloth_id]
+        )
+        new_cloth = user_new_item.cloth
+        new_cloth.to_json
+    end
     
   
   end
