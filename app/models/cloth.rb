@@ -6,4 +6,8 @@ class Cloth < ActiveRecord::Base
         self.all.sort(:price)
     end
 
+    def find_item (userId)
+        self.items.find_by user_id: userId, cloth_id: self.id
+    end
+
 end 
